@@ -15,8 +15,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="css/reveal.css">
-<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/reveal.css">
+<link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -24,14 +24,14 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        link.href = 'reveal.js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
 
 </script>
 
 <!--[if lt IE 9]>
-<script src="/Users/light/reveal.js/lib/js/html5shiv.js"></script>
+<script src="reveal.js/lib/js/html5shiv.js"></script>
 <![endif]-->
 
 <!-- Loading the mathjax macro -->
@@ -15603,7 +15603,7 @@ plt.show()</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -15655,11 +15655,10 @@ plt.show()</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[67]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">html</span>
-&lt;img src=&quot;./cov.jpg&quot; style=&quot;width: 100px&quot; /&gt; &lt;img src=&quot;./cov.jpg&quot; style=&quot;width: 100px&quot; /&gt;
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&#39;./cov.jpg&#39; style=&#39;width: 100px;&#39;/&gt;&lt;/td&gt;&lt;td&gt;&lt;img src=&#39;./cov.jpg&#39; style=&#39;width: 100px;&#39;/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&quot;</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -15677,7 +15676,7 @@ plt.show()</code></pre>
 
 
 <div class="output_html rendered_html output_subarea ">
-<img src="./cov.jpg" style="width: 100px" /> <img src="./cov.jpg" style="width: 100px" />
+<table><tr><td><img src='./cov.jpg' style='width: 100px;'/></td><td><img src='./cov.jpg' style='width: 100px;'/></td></tr></table>
 </div>
 
 </div>
@@ -15686,64 +15685,37 @@ plt.show()</code></pre>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">html</span>
-&lt;style&gt;
-.img-wrap{
-width:1000px;
-}
-img{
-float:left;
-width:92px;
-}
-&lt;/style&gt;
-&lt;div class=&#39;img-wrap&#39;&gt;
-&lt;img src=&#39;./cov.jpg&#39;/&gt;
-&lt;img src=&#39;./cov.jpg&#39;/&gt;
-&lt;img src=&#39;./cov.jpg&#39;/&gt;
-&lt;img src=&#39;./cov.jpg&#39;/&gt;
-</pre></div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<table>
+<thead><tr>
+<th>A</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="./cov.jpg" alt="alt">{:width="100"}</td>
+<td><img src="./cov.jpg" alt="alt"></td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div>
 </div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_html rendered_html output_subarea ">
-<style>
-.img-wrap{
-width:1000px;
-}
-img{
-float:left;
-width:92px;
-}
-</style>
-<div class='img-wrap'>
-<img src='./cov.jpg'/>
-<img src='./cov.jpg'/>
-<img src='./cov.jpg'/>
-<img src='./cov.jpg'/>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
-
-</div>
-
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<tr>
+<td> <img src="./cov.jpg" alt="Drawing" style="width: 100px;"/> </td>
+<td> <img src="./cov.jpg" alt="Drawing" style="width: 100px;"/> </td>
+</tr>
 </div>
 </div>
-
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -15963,6 +15935,7 @@ width:92px;
 
 <pre><code>$ jupyter nbconvert --to FORMAT notebook.ipynb</code></pre>
 <p>以下我们只重点提及 <code>Reveal.js HTML slideshow</code>。值得一提的是，不同格式的文档可以选择转换的格式，例如，LaTeX可以选择article或者report，notebook可以选择执行文档中的code再另存为。</p>
+<p>格式可查看：<a href="https://nbconvert.readthedocs.io/en/latest/config_options.html">https://nbconvert.readthedocs.io/en/latest/config_options.html</a></p>
 
 </div>
 </div>
@@ -15990,6 +15963,38 @@ width:92px;
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter nbconvert --to slides techs.ipynb --reveal-prefix <span class="s1">&#39;https://revealjs.com/#&#39;</span> --output xxx_revealjscom
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[NbConvertApp] Converting notebook techs.ipynb to slides
+[NbConvertApp] Writing 370832 bytes to xxx_revealjscom.slides.html
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -16094,6 +16099,27 @@ http://localhost:8000/index.html?print-pdf#/</code></pre>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Github 用着头疼，试图把我的reveal slides上传，没有成功。</p>
+<p>我新建了git
+账户：amlight-qq 
+邮箱：qq
+密码：abc</p>
+<p>比较好的参考网页</p>
+<p><a href="https://blog.csdn.net/weixin_34068198/article/details/91382239">https://blog.csdn.net/weixin_34068198/article/details/91382239</a></p>
+<p><a href="https://tech.zjuqsc.com/2016/08/12/%E5%B0%86-reveal-js-%E6%BC%94%E7%A4%BA%E6%96%87%E7%A8%BF%E9%83%A8%E7%BD%B2%E8%87%B3-github-pages/">https://tech.zjuqsc.com/2016/08/12/%E5%B0%86-reveal-js-%E6%BC%94%E7%A4%BA%E6%96%87%E7%A8%BF%E9%83%A8%E7%BD%B2%E8%87%B3-github-pages/</a></p>
+<p><a href="https://blog.csdn.net/ever69/article/details/97565768">https://blog.csdn.net/ever69/article/details/97565768</a></p>
+<p>我是按照这个说明来的</p>
+<p><a href="https://www.jianshu.com/p/2b13af2044dd">https://www.jianshu.com/p/2b13af2044dd</a></p>
+<p>可是第一次push成功以后，不知道怎么查看html文件，后来找到似乎是amlight-qq.github.io/revealjs/jupyter.slides.html
+但没有正常显示，不知道是我文件的问题，还是路径的问题。</p>
+
+</div>
+</div>
 </div></section></section>
 </div>
 </div>
@@ -16107,8 +16133,8 @@ require(
       waitSeconds: 15
     },
     [
-      "/Users/light/reveal.js/lib/js/head.min.js",
-      "/Users/light/reveal.js/js/reveal.js"
+      "reveal.js/lib/js/head.min.js",
+      "reveal.js/js/reveal.js"
     ],
 
     function(head, Reveal){
@@ -16123,9 +16149,9 @@ require(
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
-                { src: "/Users/light/reveal.js/lib/js/classList.js",
+                { src: "reveal.js/lib/js/classList.js",
                   condition: function() { return !document.body.classList; } },
-                { src: "/Users/light/reveal.js/plugin/notes/notes.js",
+                { src: "reveal.js/plugin/notes/notes.js",
                   async: true,
                   condition: function() { return !!document.body.classList; } }
             ]
